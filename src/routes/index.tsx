@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Star, Scissors, Baby, Users, Sparkles, MapPin, Phone, Clock } from "lucide-react";
 import heroShop from "../assets/hero-shop.jpg";
 import kidsCut from "../assets/kids-cut.jpg";
+import shop1 from "../assets/google/shop-1.jpg";
+import shop2 from "../assets/google/shop-2.jpg";
+import shop3 from "../assets/google/shop-3.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({

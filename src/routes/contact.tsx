@@ -22,8 +22,8 @@ const hours = [
   { day: "Tuesday", time: "9:00 AM – 6:00 PM" },
   { day: "Wednesday", time: "9:00 AM – 6:00 PM" },
   { day: "Thursday", time: "9:00 AM – 6:00 PM" },
-  { day: "Friday", time: "9:00 AM – 6:00 PM" },
-  { day: "Saturday", time: "9:00 AM – 3:00 PM" },
+  { day: "Friday", time: "Closed" },
+  { day: "Saturday", time: "Closed" },
   { day: "Sunday", time: "Closed" },
 ];
 
@@ -38,6 +38,9 @@ function ContactPage() {
         <p className="mx-auto mt-4 max-w-xl text-lg text-muted-foreground">
           Find us on the historic Sunbury square. Walk-ins welcome — give us a ring to check the wait.
         </p>
+        <div className="mx-auto mt-6 max-w-xl rounded-xl border border-primary/30 bg-accent/20 px-5 py-3 text-sm font-medium text-navy">
+          😷 Please wear a facial mask if you are not fully vaccinated.
+        </div>
       </div>
 
       <div className="mt-14 grid gap-8 md:grid-cols-2">
