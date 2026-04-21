@@ -18,13 +18,14 @@ export const Route = createFileRoute("/services")({
   component: ServicesPage,
 });
 
+const PRICE = "$21";
 const services = [
-  { icon: User, title: "Men's Haircut", desc: "A classic cut tailored to your style — clippers, scissors, or both.", price: "From $20" },
-  { icon: Scissors, title: "Fade & Taper", desc: "Crisp skin fades, low/mid/high tapers and modern blends.", price: "From $25" },
-  { icon: Baby, title: "Children's Cut", desc: "Patient, friendly service for kids of all ages — first cuts welcome.", price: "From $15" },
-  { icon: Sparkles, title: "Beard Trim & Lineup", desc: "Sharp lineups and shaped beards to finish off your look.", price: "From $12" },
-  { icon: Wind, title: "Senior Cut", desc: "A relaxed, classic cut for our regular gentlemen.", price: "From $17" },
-  { icon: Heart, title: "Women's Cut", desc: "Simple cuts and trims in a welcoming, no-pressure setting.", price: "From $25" },
+  { icon: User, title: "Men's Haircut", desc: "A classic cut tailored to your style — clippers, scissors, or both.", price: PRICE },
+  { icon: Scissors, title: "Fade & Taper", desc: "Crisp skin fades, low/mid/high tapers and modern blends.", price: PRICE },
+  { icon: Baby, title: "Children's Cut", desc: "Patient, friendly service for kids of all ages — first cuts welcome.", price: PRICE },
+  { icon: Sparkles, title: "Beard Trim & Lineup", desc: "Sharp lineups and shaped beards to finish off your look.", price: PRICE },
+  { icon: Wind, title: "Senior Cut", desc: "A relaxed, classic cut for our regular gentlemen.", price: PRICE },
+  { icon: Heart, title: "Women's Cut", desc: "Simple cuts and trims in a welcoming, no-pressure setting.", price: PRICE },
 ];
 
 function ServicesPage() {
@@ -34,10 +35,13 @@ function ServicesPage() {
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-20 md:grid-cols-[1.2fr_1fr] md:items-center md:px-6">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-primary">Services & Pricing</p>
-            <h1 className="mt-3 font-display text-5xl font-bold text-navy md:text-6xl">Honest cuts, honest prices.</h1>
+            <h1 className="mt-3 font-display text-5xl font-bold text-navy md:text-6xl">One simple price: $21.</h1>
             <p className="mt-5 max-w-xl text-lg text-muted-foreground">
               Whatever you're after — a clean fade, a quick trim, or a first haircut for your little one —
-              we've got you covered. Prices may vary based on length and style.
+              every haircut is just $21. Honest pricing, every chair, every time.
+            </p>
+            <p className="mt-4 inline-block rounded-lg border border-primary/30 bg-accent/20 px-4 py-2 text-sm font-medium text-navy">
+              😷 Please wear a facial mask if you are not fully vaccinated.
             </p>
           </div>
           <img

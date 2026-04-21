@@ -11,19 +11,22 @@ export function SiteFooter() {
             A family-friendly, woman-owned barber shop in the heart of Sunbury, Ohio. Haircuts for the whole family.
           </p>
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/VIVACUTSONTHESQUARE/"
             target="_blank"
             rel="noreferrer"
             className="mt-4 inline-flex items-center gap-2 text-sm text-cream/80 hover:text-accent"
           >
             <Facebook className="h-4 w-4" /> Find us on Facebook
           </a>
+          <p className="mt-4 rounded-lg border border-accent/40 bg-cream/5 p-3 text-xs text-cream/80">
+            Please wear a facial mask if you are not fully vaccinated.
+          </p>
         </div>
         <div className="space-y-3 text-sm">
           <h4 className="font-display text-lg font-semibold text-accent">Visit</h4>
           <p className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 text-accent" /> 21 S Columbus St, Sunbury, OH 43074</p>
           <p className="flex items-start gap-2"><Phone className="mt-0.5 h-4 w-4 text-accent" /> <a href="tel:+16145780867" className="hover:text-accent">(614) 578-0867</a></p>
-          <p className="flex items-start gap-2"><Clock className="mt-0.5 h-4 w-4 text-accent" /> Tue–Sat, 9 AM – 6 PM</p>
+          <p className="flex items-start gap-2"><Clock className="mt-0.5 h-4 w-4 text-accent" /> Tue–Thu, 9 AM – 6 PM · Closed Fri–Mon</p>
         </div>
         <div className="space-y-2 text-sm">
           <h4 className="font-display text-lg font-semibold text-accent">Explore</h4>

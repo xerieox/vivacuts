@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Star, Scissors, Baby, Users, Sparkles, MapPin, Phone, Clock } from "lucide-react";
 import heroShop from "../assets/hero-shop.jpg";
 import kidsCut from "../assets/kids-cut.jpg";
+import shop1 from "../assets/google/shop-1.jpg";
+import shop2 from "../assets/google/shop-2.jpg";
+import shop3 from "../assets/google/shop-3.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -129,6 +132,28 @@ function Home() {
         </div>
       </section>
 
+      {/* Real photos from our shop */}
+      <section className="mx-auto max-w-6xl px-4 py-20 md:px-6">
+        <div className="text-center">
+          <p className="text-sm font-semibold uppercase tracking-wider text-primary">Step inside</p>
+          <h2 className="mt-2 text-4xl font-bold text-navy md:text-5xl">Straight from the shop</h2>
+          <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
+            A peek at Viva Cuts on the Square — real photos from our neighbors and guests.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-4 md:grid-cols-3">
+          {[shop1, shop2, shop3].map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt={`Viva Cuts on the Square photo ${i + 1}`}
+              loading="lazy"
+              className="h-72 w-full rounded-2xl object-cover shadow-soft transition-transform hover:-translate-y-1"
+            />
+          ))}
+        </div>
+      </section>
+
       {/* Reviews */}
       <section className="mx-auto max-w-6xl px-4 py-20 md:px-6">
         <div className="text-center">
@@ -169,7 +194,7 @@ function Home() {
               <MapPin className="h-4 w-4" /> 21 S Columbus St
             </span>
             <span className="inline-flex items-center gap-2 rounded-full bg-cream/15 px-4 py-2 backdrop-blur">
-              <Clock className="h-4 w-4" /> Tue–Sat 9–6
+              <Clock className="h-4 w-4" /> Tue–Thu 9–6
             </span>
             <a
               href="tel:+16145780867"
